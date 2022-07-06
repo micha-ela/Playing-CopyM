@@ -295,7 +295,7 @@ function CreateMovers1 () {
     // mover.update();
     mover.show();
     }
-    movers.push(new Mover(random(800),random(800),1,5,random(255),random(255,random(255))));
+    movers.push(new Mover(random(windowWidth),random(windowHeight),1,5,random(255),random(255,random(255))));
     }
 
 function MoversToCluster () {
@@ -393,9 +393,9 @@ function CreateMovers2 () {
     let cx_2f=attr_2f.x*random(0.2,1);
     let cy_2f=attr_2f.y*random(0.2,1);
     let cz_2f=attr_2f.z*random(0.2,1);
-    movers.push(new Mover(random(800),random(800),1,5,cx_0f,cy_0f,cz_0f));
-    movers.push(new Mover(random(800),random(800),1,5,cx_1f,cy_1f,cz_1f));
-    movers.push(new Mover(random(800),random(800),1,5,cx_2f,cy_2f,cz_2f));
+    movers.push(new Mover(random(windowWidth),random(windowHeight),1,5,cx_0f,cy_0f,cz_0f));
+    movers.push(new Mover(random(windowWidth),random(windowHeight),1,5,cx_1f,cy_1f,cz_1f));
+    movers.push(new Mover(random(windowWidth),random(windowHeight),1,5,cx_2f,cy_2f,cz_2f));
     }
 
 
