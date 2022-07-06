@@ -7,7 +7,7 @@ let attr_1f;
 
 
 function setup () {
-createCanvas (800,800);
+createCanvas (windowWidth, windowHeight);
 for (let i = 0; i <10; i++) {
     let x=random(800);
     let y=random(800);
