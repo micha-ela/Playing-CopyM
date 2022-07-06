@@ -51,14 +51,14 @@ function draw () {
     }
     else if (iter < 4) { 
         // Increase counter everytime
-        counter += 0.01; 
+        counter += 0.05; 
         // Set the iter variable to the
         // floor value of counter
         iter = floor(counter);
     }
     else if (iter < 5) { 
         // Increase counter everytime
-        counter += 0.01; 
+        counter += 0.05; 
         // Set the iter variable to the
         // floor value of counter
         iter = floor(counter);
