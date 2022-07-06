@@ -1,2 +1,0 @@
-# Playing
-Playing with dataviz 
