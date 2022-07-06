@@ -15,8 +15,8 @@ let counter=1;
 function setup () {
 createCanvas (windowWidth, windowHeight);
 for (let i = 0; i <50; i++) {
-    let x=random(800);
-    let y=random(800);
+    let x=random(windowWidth);
+    let y=random(windowHeight);
     let cx=random(255);
     let cy=random(255);
     let cz=random(255);
