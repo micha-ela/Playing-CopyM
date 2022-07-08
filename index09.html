@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--eerst style sheet van de fonts inladen -->
+    <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
+    <link rel="stylesheet" href="./css/styles-code.css">
+    <title>ATLAS OF ID</title>
+    <style>
+  a { text-decoration: none; }
+</style>
+  </head>
+  <body>
+
+    <div class="container">
+      <img src="./Beeld/08.png"style="width:96%;">
+      <div class="bottom-right"><a href="index08.html">BACK</a></div>
+      <div class="o"><a href="index10.html">o</a></div>
+
+      <div class="top-right">Correlation, which grounds big data's predictive potential,<br/ > stems from twentieth-century eugenic attempts<br/ > to “breed” a better future.
+        <button onclick="myFunction()">Really?</button>
+        <p id="demo"></p>
+        <script>
+        function myFunction() {
+          let text;
+          let favDrink = prompt("How correlated are You?", "I am");
+          switch(favDrink) {
+            case "I am":
+            text = "Excellent choice! Correlation is good for the soul.";
+            break;
+            case "I am not":
+            text = "Well, shame on you!";
+            break;
+            case "?":
+            text = "Really? Are you sure you're not?";
+            break;
+            default:
+            text = "I've never heard of that one.";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+    </script></div>
+
+</html>

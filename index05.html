@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--eerst style sheet van de fonts inladen -->
+    <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
+    <link rel="stylesheet" href="./css/styles-code.css">
+    <title>ATLAS OF ID</title>
+    <style>
+  a { text-decoration: none; }
+</style>
+  </head>
+  <body>
+    <div class="container">
+                      <img src="./Beeld/12gr.png"style="width:96%;">
+      <div class="title">ATLAS OF ID</div>
+<div class="bottom-right"><a href="index04.html">BACK</a></div>
+  <div class="o"><a href="index06.html">o</a></div>
+
+  <div class="top-right">We make forecast about people<br/ > just as we make forecast about the weather.
+    <button onclick="myFunction()">Do it</button>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+      let text;
+            let favDrink = prompt("We make it real!", "Are you kidding me?");
+            switch(favDrink){
+        case "Are you kidding me?":
+        text = "Excellent choice. Ideology is good for the soul.";
+        break;
+        case "Are you kidding me not?":
+        text = "I am!";
+        break;
+        case "?":
+        text = "Really! We do!";
+        break;
+        default:
+        text = "I've never heard of that one.";
+  }
+  document.getElementById("demo").innerHTML = text;
+  }
+  </script></div>
+
+
+</body>
+</html>

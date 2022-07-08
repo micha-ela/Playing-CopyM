@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--eerst style sheet van de fonts inladen -->
+    <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
+    <link rel="stylesheet" href="./css/styles-code.css">
+    <title>ATLAS OF ID</title>
+    <style>
+  a { text-decoration: none; }
+</style>
+  </head>
+  <body>
+
+    <div class="container">
+          <img src="./Beeld/07g.png"style="width:96%;">
+          <div class="title">ATLAS OF ID</div>
+          <div class="bottom-right"><a href="index09.html">BACK</a></div>
+  <div class="o"><a href="index11.html">o</a></div>
+
+    <div class="top-right">We extract knowledge from the slave to the master.
+      <button onclick="myFunction()">Do it</button>
+      <p id="demo"></p>
+      <script>
+      function myFunction() {
+        let text;
+              let favDrink = prompt("Are you the slave or the master?", "the slave");
+              switch(favDrink){
+          case "the slave":
+          text = "Excellent choice. Submission is good for the soul.";
+          break;
+          case "the master!":
+          text = "the master!";
+          break;
+          case "?":
+          text = "Really?";
+          break;
+          default:
+          text = "I've never heard of that one.";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+    </script></div>
+</div>
+
+</html>

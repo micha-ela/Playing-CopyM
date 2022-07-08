@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--eerst style sheet van de fonts inladen -->
+    <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
+    <link rel="stylesheet" href="./css/styles-code.css">
+    <title>ATLAS OF ID</title>
+    <style>
+  a { text-decoration: none; }
+</style>
+  </head>
+  <body>
+
+    <div class="container">
+          <img src="./Beeld/09g.png"style="width:96%;">
+          <div class="bottom-right"><a href="index07.html">BACK</a></div>
+            <div class="o"><a href="index09.html">o</a></div>
+
+          <div class="top-right">
+Research at Brussels university found<br/ >that 2/3 of Flemisch people<br/ >never heard of AI and if they did<br/ >they didn't know what is was.
+            <button onclick="myFunction()">Are you for real!</button>
+            <p id="demo"></p>
+            <script>
+            function myFunction() {
+              let text;
+              let favDrink = prompt("Flemisch people are backward!", "Yes");
+              switch(favDrink) {
+                case "Yes":
+                text = "Excellent choice. Being backward is good for the soul.";
+                break;
+                case "No":
+                text = "Not?";
+                break;
+                case "?":
+                text = "Really? Are you sure you're not?";
+                break;
+                default:
+                text = "I've never heard of that one.";
+        }
+        document.getElementById("demo").innerHTML = text;
+        }
+        </script></div>
+
+        </div>
+
+
+
+
+</html>

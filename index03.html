@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--eerst style sheet van de fonts inladen -->
+    <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
+    <link rel="stylesheet" href="./css/styles-code.css">
+    <title>ATLAS OF ID</title>
+    <style>
+  a { text-decoration: none; }
+</style>
+  <body>
+    <div class="container">
+      <img src="./Beeld/14gr.png"style="width:96%;">
+      <div class="bottom-right"><a href="index02.html">BACK</a></div>
+      <div class="o"><a href="index04.html">o</a></div>
+
+  <div class="top-right">There is not a thing on earth,<br/ > created or born,<br /> that does not reveal its inward form<br/ > also outwardly.
+    <button onclick="myFunction()">Deep</button>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+      let text;
+      let favDrink = prompt("Do you want to contribute to the future?", "Yes");
+      switch(favDrink) {
+        case "Yes":
+        text = "Excellent choice. Participation is good for the soul.";
+        break;
+        case "No":
+        text = "Nah!";
+        break;
+        case "?":
+        text = "Really? Are you sure you don't know?";
+        break;
+        default:
+        text = "I've never heard of that one.";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script></div></div>
+
+
+</body>
+</html>
