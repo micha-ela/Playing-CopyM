@@ -12,8 +12,12 @@ let iter=1;
 let counter=1;
 
 
+  
+
+
 function setup () {
-createCanvas (windowWidth, windowHeight);
+canvas = createCanvas (windowWidth*0.96, windowHeight);
+canvas.position(0,0);
 for (let i = 0; i <50; i++) {
     let x=random(windowWidth);
     let y=random(windowHeight);
@@ -85,7 +89,6 @@ function draw () {
         iter = floor(counter);
     }
     else {
- 
         // If iter increases by 11 then
         // stop the loop
         noLoop();
@@ -241,6 +244,7 @@ class Attractor {
 
     attract (mover) {
         let force = p5.Vector.sub(this.pos,mover.pos);
+        // sets the form , width of the cluster, distance to center, update here if you want to change or make responsive eg. to number of items in the cluster
         let distanceSq = constrain(force.magSq(),5,5);
         let G=10;
         let strength = G*(this.mass*mover.mass)/distanceSq;
@@ -437,6 +441,8 @@ function step () {
     switch (iter) {
         case 1:
             clear();
+            // canvas.drawingContext.globalCompositeOperation = 'source-over'; //<-- set this
+            // background(img);
             CreateMovers1();
             break;
         case 2:
@@ -460,7 +466,7 @@ function step () {
             MoversToCluster();
             break;
         case 7:
-            clear();
+            clear();    
             MoversMorphToCluster();
             break;
     }
