@@ -14,10 +14,6 @@
     color: #FF1493;
     background-color: white;
     font-weight: normal;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-
 }
 
 p {
@@ -92,15 +88,9 @@ p {
   color: #FF1493;
 }
 
-
-
 <style type="text/css">
 A:link { COLOR: #FF1493; TEXT-DECORATION: none; font-weight: normal }
 A:visited { COLOR: #FF1493; TEXT-DECORATION: none; font-weight: normal }
 A:active { COLOR:#7FFFD4; TEXT-DECORATION: none }
 A:hover { COLOR: #7FFFD4; TEXT-DECORATION: none; font-weight: normal }
-</style>
-
-
-
 </style>
