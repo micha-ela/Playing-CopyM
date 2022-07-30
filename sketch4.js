@@ -17,6 +17,12 @@ let counter=1;
 function preload() {
     img_03gr = loadImage('Beeld/03gr.png');
     img_03Kl = loadImage('Beeld/03kl.png');
+    img_06gr = loadImage('Beeld/06gr.png');
+    img_06Kl = loadImage('Beeld/06kl.png');
+    img_07 = loadImage('Beeld/07.png');
+    img_07g = loadImage('Beeld/07g.png');
+    img_08kl = loadImage('Beeld/08kl.png');
+    img_09g = loadImage('Beeld/09g.png');
 }
 
 
@@ -200,6 +206,7 @@ function Step2 () {
     
     
     function overButton2Step1 () {
+        background(img_06gr);
         buttons[2].style("background-color","#7FFFD4");
         answer1Step1=createP("Really?");
         answer1Step1.style("position","absolute");
@@ -274,6 +281,7 @@ function createButtonsStep2 () {
 }
 
 function overButton0Step2 () {
+    background(img_06Kl);
     buttons[0].style("background-color","#7FFFD4");
     answer1Step2=createP("Excellent choice.");
     answer1Step2.style("position","absolute");
@@ -302,6 +310,7 @@ function outButton0Step2 () {
 
 
 function overButton1Step2 () {
+    background(img_07);
     buttons[1].style("background-color","#7FFFD4");
     answer1Step2=createP("You reveal more then you think.");
     answer1Step2.style("position","absolute");
@@ -330,6 +339,7 @@ function outButton1Step2 () {
 
 
 function overButton2Step2 () {
+    background(img_07g);
     buttons[2].style("background-color","#7FFFD4");
     answer1Step2=createP("Really?");
     answer1Step2.style("position","absolute");
