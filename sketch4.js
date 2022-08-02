@@ -1,4 +1,5 @@
 let buttons = [];
+let buttonsTrans = [];
 let img;
 let valueX;
 let valueY;
@@ -32,11 +33,15 @@ canvas.position(0,0);
 frameRate(1);
 }
 
-function draw (){
-    setTimeout(Step1,1);
-    // setTimeout(removeElements(),5000);
-    setTimeout(Step2,5010);
-}   
+// function draw (){
+//     setTimeout(Step1,1);
+//     // setTimeout(removeElements(),5000);
+//     setTimeout(Step2,5010);
+// }   
+
+function draw(){
+    Step1();
+}
 
 // function draw () {
 //     console.log(frameCount);
@@ -75,14 +80,18 @@ function keyPressed() {
 function Step1 () {
     removeElements();
     noLoop();
+    createButtonsTransStep1 ();
     createQuestStep1() ;
-    createButtonsStep1();
+    createButtonsStep1();    
     buttons[0].mouseOver(overButton0Step1);
     buttons[0].mouseOut(outButton0Step1);
     buttons[1].mouseOver(overButton1Step1);
     buttons[1].mouseOut(outButton1Step1);
     buttons[2].mouseOver(overButton2Step1);
     buttons[2].mouseOut(outButton2Step1);
+    buttonsTrans[0].mouseOver(overButtonTrans0Step1);
+    buttonsTrans[1].mouseOver(overButtonTrans1Step1);
+    buttonsTrans[2].mouseOver(overButtonTrans2Step1);
     // removeQuestStep1() ;
     }
 
@@ -146,9 +155,33 @@ function Step2 () {
         button.style("border","none");
     }
     }
+
     
+    function createButtonsTransStep1 () {
+        buttonsTrans[0] = createButton("");
+        buttonsTrans[1] = createButton("");
+        buttonsTrans[2] = createButton("");
+        buttonsTrans[0].position(width*0,height*0);
+        buttonsTrans[1].position(width*0.33,height*0);
+        buttonsTrans[2].position(width*0.66,height*0);
+        // let bw=concat(",1000,px");
+        for (let button of buttonsTrans) {
+        button.style("background-color","transparent");
+        // button.style("background-color","0");
+        // button.style("background-image","none");
+        button.style("outline","none");
+        button.style("min-width","33.334%");
+        button.style("min-height","100%");
+        // buttons.style("border-radius","100px");
+        // buttons.style("color","#dcdcdc");
+        // buttons.style("font-size","20px");
+        // buttons.style("font-family","coordinates");
+        button.style("border","none");
+    }
+    }
+
     function overButton0Step1 () {
-        background(img_03gr);
+        // background(img_03gr);
         buttons[0].style("background-color","#7FFFD4");
         answer1Step1=createP("Excellent choice.");
         answer1Step1.style("position","absolute");
@@ -175,6 +208,10 @@ function Step2 () {
         quest3Step1.style("font-weight","lighter");
     }
     
+
+    function overButtonTrans0Step1 () {
+        background(img_03gr);
+    }
     
     function overButton1Step1 () {
         background(img_03Kl);
@@ -204,6 +241,9 @@ function Step2 () {
         quest3Step1.style("font-weight","lighter");
     }
     
+    function overButtonTrans1Step1 () {
+        background(img_03Kl);
+    }
     
     function overButton2Step1 () {
         background(img_06gr);
@@ -232,6 +272,11 @@ function Step2 () {
         quest3Step1.style("font-family","coordinates");
         quest3Step1.style("font-weight","lighter");
     }
+    
+    function overButtonTrans2Step1 () {
+        background(img_06gr);
+    }
+
 
 ////
 
