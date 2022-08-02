@@ -1,45 +1,30 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en">
+   <style>
+  a { text-decoration: none; }
+</style>
   <head>
-    <meta charset="utf-8">
-    <!--eerst style sheet van de fonts inladen -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
     <link rel="stylesheet" href="https://use.typekit.net/ilr2sfa.css">
     <link rel="stylesheet" href="./css/styles-code.css">
-    <title>ATLAS OF ID</title>
-    <style>
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.dimensions.js"></script>
+    <script src="libraries/p5.func.min.js"></script>
+         <style>
   a { text-decoration: none; }
 </style>
   </head>
+
   <body>
-    <div class="container">
-      <div class="title">ATLAS OF ID 3/13</div>
-      <img src="./Beeld/15kl.png"style="width:96%;">
-      <div class="bottom-right"><a href="index01.html">BACK</a></div>
-      <div class="o"><a href="index03.html">o</a></div>
-      <div class="top-right">Your face is like a secret code.
-        <button onclick="myFunction()">Try it</button>
-        <p id="demo"></p>
-        <script>
-        function myFunction() {
-          let text;
-          let favDrink = prompt("Does it show?", "Yes");
-          switch(favDrink) {
-            case "Yes":
-            text = "Excellent choice. Exposure is good for the soul.";
-            break;
-            case "No":
-            text = "You reveal more then you think.";
-            break;
-            case "Maybe":
-            text = "Really? Are you sure you don't know?";
-            break;
-            default:
-            text = "I've never heard of that one.";
-    }
-    document.getElementById("demo").innerHTML = text;
-  }
-  </script></div></div>
+    <script src="sketch6.js"></script>
 
 
-</body>
+
+  </body>
 </html>

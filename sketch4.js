@@ -1,4 +1,9 @@
+// load images, change image with the mouseover 
+
+
+// define non-transparant buttons
 let buttons = [];
+// define transparant buttons
 let buttonsTrans = [];
 let img;
 let valueX;
@@ -31,6 +36,7 @@ function setup () {
 canvas = createCanvas (windowWidth*0.96, windowHeight);
 canvas.position(0,0);
 frameRate(1);
+print(img_03gr.height,img_03gr.height);
 }
 
 // function draw (){
@@ -38,6 +44,9 @@ frameRate(1);
 //     // setTimeout(removeElements(),5000);
 //     setTimeout(Step2,5010);
 // }   
+
+
+// here is the draw , add all steps to make it look like an animation
 
 function draw(){
     Step1();
@@ -76,6 +85,12 @@ function keyPressed() {
       quests[i].hide();
     }
   }
+
+// all functions to execute in the different steps 
+// noLoop prevents the constant redrawing, this way the tekst is also sharp for transparent background
+// if loop text is constantly redrawn as well, with background no problem as both background and text are redrawn
+// without background, the text becomes unclear
+// if playing with images - how to introduce the loop again?
 
 function Step1 () {
     removeElements();
