@@ -1,10 +1,10 @@
 // load images, change image with the mouseover 
 
-
 // define non-transparant buttons
 let buttons = [];
 // define transparant buttons
 let buttonsTrans = [];
+let answers = [];
 let img;
 let valueX;
 let valueY;
@@ -107,6 +107,11 @@ function Step1 () {
     buttonsTrans[0].mouseOver(overButtonTrans0Step1);
     buttonsTrans[1].mouseOver(overButtonTrans1Step1);
     buttonsTrans[2].mouseOver(overButtonTrans2Step1);
+    buttons[0].mouseClicked(clickButton0Step1);
+    buttons[1].mouseClicked(clickButton1Step1);
+    buttons[2].mouseClicked(clickButton2Step1);
+    // console.log(answers[0]);
+    if (answers[0] == 0) {text('button1', width*0.10,height*0.10);} 
     // removeQuestStep1() ;
     }
 
@@ -129,8 +134,8 @@ function Step2 () {
     function createQuestStep1() {
         // quest1.hide(); 
         quest1Step1=createP("You want to become the future model European?");
-        quest1Step1.style("top","8px");
-        quest1Step1.style("right","50px");
+        quest1Step1.style("top","1%");
+        quest1Step1.style("right","2%");
         quest1Step1.style("position","absolute");
         quest1Step1.style("font-size","24px");
         quest1Step1.style("font-family","coordinates");
@@ -143,7 +148,7 @@ function Step2 () {
         quest2Step1.style("font-family","coordinates");
         quest2Step1.style("font-weight","lighter");
         quest3Step1=createP("I've never heard of that one.");
-        quest3Step1.style("top","220px");
+        quest3Step1.style("top","30%");
         quest3Step1.style("right","50px");
         quest3Step1.style("position","absolute");
         quest3Step1.style("font-size","24px");
@@ -224,9 +229,25 @@ function Step2 () {
     }
     
 
+    function clickButton0Step1 () {
+        answers[0]=0;
+        Step2();
+    }
+
+    function clickButton1Step1 () {
+        answers[0]=1;
+        Step2();
+    }
+    
+    function clickButton2Step1 () {
+        answers[0]=2;
+        Step2();
+    }
+
     function overButtonTrans0Step1 () {
         background(img_03gr);
     }
+
     
     function overButton1Step1 () {
         background(img_03Kl);
