@@ -111,7 +111,7 @@ function Step1 () {
     buttons[1].mouseClicked(clickButton1Step1);
     buttons[2].mouseClicked(clickButton2Step1);
     // console.log(answers[0]);
-    if (answers[0] == 0) {text('button1', width*0.10,height*0.10);} 
+    // if (answers[0] == 0) {text('button1', width*0.10,height*0.10);} 
     // removeQuestStep1() ;
     }
 
@@ -229,21 +229,6 @@ function Step2 () {
     }
     
 
-    function clickButton0Step1 () {
-        answers[0]=0;
-        Step2();
-    }
-
-    function clickButton1Step1 () {
-        answers[0]=1;
-        Step2();
-    }
-    
-    function clickButton2Step1 () {
-        answers[0]=2;
-        Step2();
-    }
-
     function overButtonTrans0Step1 () {
         background(img_03gr);
     }
@@ -313,6 +298,21 @@ function Step2 () {
         background(img_06gr);
     }
 
+    function clickButton0Step1 () {
+        answers[0]=0;
+        Step2();
+    }
+
+    function clickButton1Step1 () {
+        answers[0]=1;
+        Step2();
+    }
+    
+    function clickButton2Step1 () {
+        answers[0]=2;
+        Step2();
+    }
+
 
 ////
 
@@ -339,6 +339,19 @@ function createQuestStep2() {
     quest3Step2.style("font-size","24px");
     quest3Step2.style("font-family","coordinates");
     quest3Step2.style("font-weight","lighter"); 
+    if (answers[0]==0)  {
+        quest10Step2=createP("Your answer on the previous question was ridiculous, haha")
+    } else if (answers[0]==1)  {
+        quest10Step2=createP("Your answer on the previous question was TOP")
+    } else if (answers[0]==2)  {
+        quest10Step2=createP("Why did you NOT ANSWER??")
+    }
+    quest10Step2.style("top","8px");
+    quest10Step2.style("left","50px");
+    quest10Step2.style("position","absolute");
+    quest10Step2.style("font-size","24px");
+    quest10Step2.style("font-family","coordinates");
+    quest10Step2.style("font-weight","bold"); 
 }
 
 function createButtonsStep2 () {
